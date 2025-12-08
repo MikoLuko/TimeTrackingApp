@@ -1,0 +1,80 @@
+﻿@model List<TimeTrackingApp.Models.Entities.User>
+
+@{
+    ViewData["Title"] = "Użytkownicy";
+}
+
+<script>
+    var szer = window.matchMedia("(max-width: 520px)");
+    window.onload = function() {
+        renderTable();
+    };
+    szer.addEventListener('change', (x) => {
+        renderTable();
+    });
+
+    function renderTable() {
+        if(szer.matches){
+            document.getElementById('table').innerHTML = `
+                @foreach (var user in Model)
+                {
+                        <tr><th>Id</th><td>@user.Id</td></tr>
+                        <tr><th>Email</th><td>@user.Email</td></tr>
+                        <tr><th>Imię</th><td>@user.FirstName</td></tr>
+                        <tr><th>Nazwisko</th><td>@user.LastName</td></tr>
+                        <tr><th>Stanowisko</th><td>@user.Position</td></tr>
+                        <tr><th>Dział</th><td>@user.Department</td></tr>
+                        <tr><th>Aktywny</th><td>@(user.IsActive ? "Tak" : "Nie")</td></tr>
+                        <tr><th>Utworzono</th><td>@user.CreatedAt.ToString("yyyy-MM-dd")</td></tr>
+                        <tr>
+                            <th>Usuń/Edit</th>
+                            <td class="flex-row d-flex flex-wrap flex justify-content-center">
+                                <form asp-action="Delete" method="post" asp-route-id="@user.Id" style="width:50%;flex-shrink:1;display:flex;flex-basis:70px; justify-content:center;">
+                                    <button class="btn btn-danger" style="width:100%; margin-right:3px; margin-bottom:3px;">USUŃ</button>
+                                </form>
+                                <form asp-action="Edit" method="get" asp-route-id="@user.Id" style="flex-shrink:1;display:flex;flex-basis:70px; justify-content:center;">
+                                    <button class="btn" style="background-color:#00F; color:white; width:100%; margin-bottom:3px;">EDIT</button>
+                                </form>
+                            </td>
+                        </tr>
+                }
+            `;
+        } else {
+            document.getElementById('table').innerHTML = `
+                <tr>
+                    <th>Id</th><th>Email</th><th>Imię</th><th>Nazwisko</th><th>Stanowisko</th>
+                    <th>Dział</th><th>Aktywny</th><th>Utworzono</th><th>Usuń/Edit</th>
+                </tr>
+                @foreach (var user in Model)
+                {
+                        <tr>
+                            <td>@user.Id</td>
+                            <td>@user.Email</td>
+                            <td>@user.FirstName</td>
+                            <td>@user.LastName</td>
+                            <td>@user.Position</td>
+                            <td>@user.Department</td>
+                            <td>@(user.IsActive ? "Tak" : "Nie")</td>
+                            <td>@user.CreatedAt.ToString("yyyy-MM-dd")</td>
+                            <td class="flex-row d-flex flex-wrap flex justify-content-center">
+                                <form asp-action="Delete" method="post" asp-route-id="@user.Id" style="width:50%;flex-shrink:1;display:flex;flex-basis:70px; justify-content:center;">
+                                    <button class="btn btn-danger" style="width:100%; margin-right:3px; margin-bottom:3px;">USUŃ</button>
+                                </form>
+                                <form asp-action="Edit" method="get" asp-route-id="@user.Id" style="flex-shrink:1;display:flex;flex-basis:70px; justify-content:center;">
+                                    <button class="btn" style="background-color:#00F; color:white; width:100%; margin-bottom:3px;">EDIT</button>
+                                </form>
+                            </td>
+                        </tr>
+                }
+            `;
+        }
+    }
+</script>
+
+<form asp-action="Create" method="post" class="input-group" style="justify-content:center; margin-bottom:10px;">
+    <button class="btn btn-success" style="width:60%;font-size:130%; border-radius:5px; font-weight:bold;">DODAJ</button>
+</form>
+
+<table class="table table-hover table-striped table-bordered text-center" style="vertical-align:middle;" id="table">
+    <!-- Tabela zostanie wygenerowana dynamicznie przez JS -->
+</table>
