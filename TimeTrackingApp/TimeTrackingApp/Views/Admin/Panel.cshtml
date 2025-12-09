@@ -1,4 +1,4 @@
-﻿@model List<TimeTrackingApp.Models.Entities.User>
+﻿@model List<TimeTrackingApp.Models.ViewModel.PanelViewModel>
 
 @{
     ViewData["Title"] = "Użytkownicy";
@@ -24,6 +24,7 @@
                         <tr><th>Nazwisko</th><td>@user.LastName</td></tr>
                         <tr><th>Stanowisko</th><td>@user.Position</td></tr>
                         <tr><th>Dział</th><td>@user.Department</td></tr>
+                        <tr><th>Rola</th><td>@user.Role</td></tr>
                         <tr><th>Aktywny</th><td>@(user.IsActive ? "Tak" : "Nie")</td></tr>
                         <tr><th>Utworzono</th><td>@user.CreatedAt.ToString("yyyy-MM-dd")</td></tr>
                         <tr>
@@ -35,6 +36,18 @@
                                 <form asp-action="Edit" method="get" asp-route-id="@user.Id" style="flex-shrink:1;display:flex;flex-basis:70px; justify-content:center;">
                                     <button class="btn" style="background-color:#00F; color:white; width:100%; margin-bottom:3px;">EDIT</button>
                                 </form>
+                                     @if (user.IsActive)
+                                                {
+                                                            <form asp-action="Deactivate" asp-route-id="@user.Id" method="post" style="display:inline;">
+                                                                <button type="submit" class="btn btn-warning btn-sm">Dezaktywuj</button>
+                                                            </form>
+                                                }
+                                                else
+                                                {
+                                                            <form asp-action="Activate" asp-route-id="@user.Id" method="post" style="display:inline;">
+                                                                <button type="submit" class="btn btn-success btn-sm">Aktywuj</button>
+                                                            </form>
+                                                }
                             </td>
                         </tr>
                 }
@@ -54,6 +67,7 @@
                             <td>@user.LastName</td>
                             <td>@user.Position</td>
                             <td>@user.Department</td>
+                            <td>@user.Role</td>
                             <td>@(user.IsActive ? "Tak" : "Nie")</td>
                             <td>@user.CreatedAt.ToString("yyyy-MM-dd")</td>
                             <td class="flex-row d-flex flex-wrap flex justify-content-center">
@@ -63,6 +77,19 @@
                                 <form asp-action="Edit" method="get" asp-route-id="@user.Id" style="flex-shrink:1;display:flex;flex-basis:70px; justify-content:center;">
                                     <button class="btn" style="background-color:#00F; color:white; width:100%; margin-bottom:3px;">EDIT</button>
                                 </form>
+                                        @if (user.IsActive)
+                                            {
+                                                    <form asp-action="Deactivate" asp-route-id="@user.Id" method="post" style="display:inline;">
+                                                        <button type="submit" class="btn btn-warning btn-sm">Dezaktywuj</button>
+                                                    </form>
+                                            }
+                                            else
+                                            {
+                                                    <form asp-action="Activate" asp-route-id="@user.Id" method="post" style="display:inline;">
+                                                        <button type="submit" class="btn btn-success btn-sm">Aktywuj</button>
+                                                    </form>
+                                            }
+
                             </td>
                         </tr>
                 }
@@ -71,7 +98,7 @@
     }
 </script>
 
-<form asp-action="Create" method="post" class="input-group" style="justify-content:center; margin-bottom:10px;">
+<form asp-action="Create" method="get" class="input-group" style="justify-content:center; margin-bottom:10px;">
     <button class="btn btn-success" style="width:60%;font-size:130%; border-radius:5px; font-weight:bold;">DODAJ</button>
 </form>
 

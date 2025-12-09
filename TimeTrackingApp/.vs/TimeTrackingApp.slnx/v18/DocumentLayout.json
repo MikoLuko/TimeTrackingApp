@@ -1,73 +1,105 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\models\\entities\\emaillog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\entities\\emaillog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\admin\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\admin\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\controllers\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\viewmodel\\editviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\viewmodel\\editviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\manage\\personaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\manage\\personaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\timetrackingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\timetrackingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\timetrackingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\admin\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\admin\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\viewmodel\\panelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\viewmodel\\panelviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\admin\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\viewmodel\\createviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\viewmodel\\createviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\entities\\emaillog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\entities\\emaillog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\account\\manage\\personaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\account\\manage\\personaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -86,40 +118,35 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\models\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\models\\entities\\timeentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\entities\\timeentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\entities\\timeentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\migrations\\20251205222226_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\migrations\\20251205222226_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\migrations\\20251205222226_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\source\\repos\\timetrackingapp\\timetrackingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|c:\\users\\mluko\\onedrive\\desktop\\trackingsystemapp\\timetrackingapp\\timetrackingapp\\timetrackingapp\\migrations\\20251209202036_initialmigration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB3094EF-2B30-FB53-9358-26EE34B3F3B5}|TimeTrackingApp\\TimeTrackingApp.csproj|solutionrelative:timetrackingapp\\migrations\\20251209202036_initialmigration2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -129,7 +156,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -137,86 +164,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Panel.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAADwv1AAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T21:03:36.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "TimeTrackingApp\\ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-12-08T20:01:34.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Views_Home_Privacy_cshtml.g.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs",
-              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs[Tylko do odczytu]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs[Tylko do odczytu]",
+              "DocumentIndex": 37,
+              "Title": "20251209202036_InitialMigration2.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251209202036_InitialMigration2.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Migrations\\20251209202036_InitialMigration2.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251209202036_InitialMigration2.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Migrations\\20251209202036_InitialMigration2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:54:08.636Z",
-              "EditorCaption": "[Tylko do odczytu]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Views_Shared__LoginPartial_cshtml.g.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs",
-              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs[Tylko do odczytu]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs[Tylko do odczytu]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:54:05.566Z",
-              "EditorCaption": "[Tylko do odczytu]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Areas_Identity_Pages__ViewStart_cshtml.g.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs",
-              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs[Tylko do odczytu]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs[Tylko do odczytu]",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:53:28.342Z",
-              "EditorCaption": "[Tylko do odczytu]"
+              "WhenOpened": "2025-12-09T20:20:36.974Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:15:25.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "TimeTrackingApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -224,11 +188,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "TimeTrackingApp\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -236,11 +200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "PersonalData.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
               "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -249,145 +213,107 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmailLog.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\Admin.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Controllers\\Admin.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\Admin.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Controllers\\Admin.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:20:55.404Z",
+              "WhenOpened": "2025-12-08T21:09:14.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\Admin.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Controllers\\Admin.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\Admin.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Controllers\\Admin.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T21:09:14.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Admin\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Edit.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\Admin\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-05T22:44:18.707Z"
+              "WhenOpened": "2025-12-09T17:20:05.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "Panel.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\Admin\\Panel.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-08T21:03:36.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Views_Home_Privacy_cshtml.g.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs",
+              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\9a2631bb2ea0f4ec9fb13bf3462c51c0f1097a10\\Views_Home_Privacy_cshtml.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:54:08.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Program.cs",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Program.cs",
               "RelativeToolTip": "TimeTrackingApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvycAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T13:27:48.997Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T20:07:43.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAAAMcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EditViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ViewModel\\EditViewModel.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\ViewModel\\EditViewModel.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ViewModel\\EditViewModel.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Models\\ViewModel\\EditViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T20:12:05.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ManageNav.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T20:32:31.454Z"
+              "WhenOpened": "2025-12-09T19:31:09.68Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:31:57.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Views_Home_Index_cshtml.g.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs",
-              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs[Tylko do odczytu]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs[Tylko do odczytu]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:54:12.6Z",
-              "EditorCaption": "[Tylko do odczytu]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Views__ViewStart_cshtml.g.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs",
-              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs[Tylko do odczytu]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs[Tylko do odczytu]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T19:54:13.563Z",
-              "EditorCaption": "[Tylko do odczytu]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Create.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Admin\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Admin\\Create.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\Admin\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:54:30.376Z"
+              "WhenOpened": "2025-12-09T17:47:06.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T13:57:16.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TimeTrackingApp.csproj",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp.csproj",
               "RelativeDocumentMoniker": "TimeTrackingApp\\TimeTrackingApp.csproj",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp.csproj",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp.csproj",
               "RelativeToolTip": "TimeTrackingApp\\TimeTrackingApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -395,59 +321,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-08T19:55:58.706Z"
+              "DocumentIndex": 7,
+              "Title": "PanelViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ViewModel\\PanelViewModel.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\ViewModel\\PanelViewModel.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ViewModel\\PanelViewModel.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Models\\ViewModel\\PanelViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T20:08:27.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CreateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ViewModel\\CreateViewModel.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\ViewModel\\CreateViewModel.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ViewModel\\CreateViewModel.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Models\\ViewModel\\CreateViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:54:48.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-05T22:13:57.539Z"
+              "WhenOpened": "2025-12-08T19:15:25.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T18:39:20.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "TimeTrackingApp\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-08T20:01:34.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Areas_Identity_Pages__ViewStart_cshtml.g.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs",
+              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b730e1b98b57284e7efce8a7614f6d8d28ac6a7\\Areas_Identity_Pages__ViewStart_cshtml.g.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:53:28.342Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "20251205222226_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
-              "ViewState": "AgIAABgBAAAAAAAAAAAgwDUBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T22:22:27.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "20251205143039_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
+              "Title": "Views_Shared__LoginPartial_cshtml.g.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs",
+              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6a57972ca27d630f2a8a5349a9292af083408528\\Views_Shared__LoginPartial_cshtml.g.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T14:30:40.317Z"
+              "WhenOpened": "2025-12-08T19:54:05.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "TimeTrackingApp\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -455,11 +417,166 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmailLog.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Models\\Entities\\EmailLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T14:20:55.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T22:44:18.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-08T20:07:43.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAIBJwMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T20:12:05.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-08T20:32:31.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T14:31:57.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Views_Home_Index_cshtml.g.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs",
+              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\d606032138c13516f90b9c64b535c70eb0feba52\\Views_Home_Index_cshtml.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:54:12.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Views__ViewStart_cshtml.g.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs",
+              "ToolTip": "C:\\Users\\Mluko\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8b569bd725bd23e80c291be4a278109a3a6bf611\\Views__ViewStart_cshtml.g.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:54:13.563Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-08T19:54:30.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-08T19:55:58.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "TimeTrackingApp\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-05T22:13:57.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20251205222226_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
+              "RelativeDocumentMoniker": "TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
+              "RelativeToolTip": "TimeTrackingApp\\Migrations\\20251205222226_InitialMigration.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAAAgwDUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T22:22:27.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20251205143039_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Migrations\\20251205143039_InitialMigration.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T14:30:40.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "LeaveRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\LeaveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\LeaveRequest.cs",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\Entities\\LeaveRequest.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\LeaveRequest.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\LeaveRequest.cs",
               "RelativeToolTip": "TimeTrackingApp\\Models\\Entities\\LeaveRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -467,11 +584,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "TimeEntry.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\TimeEntry.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\TimeEntry.cs",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\Entities\\TimeEntry.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\TimeEntry.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\TimeEntry.cs",
               "RelativeToolTip": "TimeTrackingApp\\Models\\Entities\\TimeEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -479,23 +596,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\Entities\\User.cs",
-              "RelativeToolTip": "TimeTrackingApp\\Models\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T13:57:16.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "TimeTrackingApp\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "TimeTrackingApp\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -503,11 +608,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\appsettings.json",
               "RelativeDocumentMoniker": "TimeTrackingApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\Mluko\\source\\repos\\TimeTrackingApp\\TimeTrackingApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mluko\\OneDrive\\Desktop\\TrackingSystemApp\\TimeTrackingApp\\TimeTrackingApp\\TimeTrackingApp\\appsettings.json",
               "RelativeToolTip": "TimeTrackingApp\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",

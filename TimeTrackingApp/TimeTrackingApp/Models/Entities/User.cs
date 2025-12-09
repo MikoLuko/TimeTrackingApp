@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace TimeTrackingApp.Models.Entities
 {
@@ -11,7 +12,9 @@ namespace TimeTrackingApp.Models.Entities
         public string Department { get; set; } = "";
         public bool IsActive { get; set; } = true;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        [ValidateNever]
         public List<TimeEntry> TimeEntries { get; set; }
+        [ValidateNever]
         public List<LeaveRequest> LeaveRequests { get; set; }
     }
 
