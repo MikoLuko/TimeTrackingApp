@@ -1,31 +1,24 @@
-# Visual Studio
 .vs/
 *.user
 *.suo
 *.cache
 *.log
 
-# Build
 bin/
 obj/
 
-# Rider
 .idea/
 
-# ASP.NET
 wwwroot/lib/
 *.db
 
-# NuGet
 *.nupkg
 *.snupkg
 *.nuspec
 
-# Debug / Release
 *.dll
 *.exe
 *.pdb
 
-# Others
 *.bak
 *.log
