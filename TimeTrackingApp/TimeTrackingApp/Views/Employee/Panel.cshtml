@@ -1,0 +1,32 @@
+﻿@model TimeTrackingApp.Models.ViewModels.EmpPanelViewModel
+
+<h2>Panel pracownika</h2>
+
+@if (Model.IsWorking)
+{
+    <form method="post" asp-action="EndWork">
+        <button class="btn btn-danger">Zakończ pracę</button>
+    </form>
+}
+else
+{
+    <form method="post" asp-action="StartWork">
+        <button class="btn btn-success">Rozpocznij pracę</button>
+    </form>
+}
+
+<br />
+
+<a class="btn btn-info" asp-action="History">Historia</a>
+<a class="btn btn-primary" asp-action="Month">Godziny w miesiącu</a>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger mt-3">@TempData["Error"]</div>
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success mt-3">@TempData["Success"]</div>
+}
+

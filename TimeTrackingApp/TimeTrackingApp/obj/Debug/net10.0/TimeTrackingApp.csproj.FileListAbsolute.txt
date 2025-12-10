@@ -828,4 +828,3 @@ C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingAp
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\TimeTrackingApp.pdb
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\TimeTrackingApp.genruntimeconfig.cache
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\ref\TimeTrackingApp.dll
-C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Embedded.dll

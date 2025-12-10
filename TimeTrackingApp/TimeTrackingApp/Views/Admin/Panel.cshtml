@@ -56,7 +56,7 @@
             document.getElementById('table').innerHTML = `
                 <tr>
                     <th>Id</th><th>Email</th><th>Imię</th><th>Nazwisko</th><th>Stanowisko</th>
-                    <th>Dział</th><th>Aktywny</th><th>Utworzono</th><th>Usuń/Edit</th>
+                    <th>Dział</th><th>Rola</th><th>IsActive</th><th>Utworzony</th><th>Usuń/Edit</th>
                 </tr>
                 @foreach (var user in Model)
                 {
@@ -103,5 +103,4 @@
 </form>
 
 <table class="table table-hover table-striped table-bordered text-center" style="vertical-align:middle;" id="table">
-    <!-- Tabela zostanie wygenerowana dynamicznie przez JS -->
 </table>

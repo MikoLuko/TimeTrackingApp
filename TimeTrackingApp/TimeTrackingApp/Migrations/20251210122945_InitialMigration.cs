@@ -219,7 +219,7 @@ namespace TimeTrackingApp.Migrations
                     userid = table.Column<string>(type: "text", nullable: false),
                     entrydate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     starttime = table.Column<TimeSpan>(type: "interval", nullable: false),
-                    endtime = table.Column<TimeSpan>(type: "interval", nullable: false),
+                    endtime = table.Column<TimeSpan>(type: "interval", nullable: true),
                     totalhours = table.Column<double>(type: "double precision", nullable: false),
                     note = table.Column<string>(type: "text", nullable: true),
                     createdat = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),

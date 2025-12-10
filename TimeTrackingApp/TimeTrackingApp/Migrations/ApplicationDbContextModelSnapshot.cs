@@ -158,6 +158,46 @@ namespace TimeTrackingApp.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("TimeEntry", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
+
+                    b.Property<DateTime>("createdat")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<TimeSpan?>("endtime")
+                        .HasColumnType("interval");
+
+                    b.Property<DateTime>("entrydate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("modifiedby")
+                        .HasColumnType("text");
+
+                    b.Property<string>("note")
+                        .HasColumnType("text");
+
+                    b.Property<TimeSpan>("starttime")
+                        .HasColumnType("interval");
+
+                    b.Property<double>("totalhours")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("userid")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("userid");
+
+                    b.ToTable("TimeEntries");
+                });
+
             modelBuilder.Entity("TimeTrackingApp.Models.Entities.EmailLog", b =>
                 {
                     b.Property<int>("id")
@@ -241,46 +281,6 @@ namespace TimeTrackingApp.Migrations
                     b.HasIndex("userid");
 
                     b.ToTable("LeaveRequests");
-                });
-
-            modelBuilder.Entity("TimeTrackingApp.Models.Entities.TimeEntry", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id"));
-
-                    b.Property<DateTime>("createdat")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<TimeSpan>("endtime")
-                        .HasColumnType("interval");
-
-                    b.Property<DateTime>("entrydate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("modifiedby")
-                        .HasColumnType("text");
-
-                    b.Property<string>("note")
-                        .HasColumnType("text");
-
-                    b.Property<TimeSpan>("starttime")
-                        .HasColumnType("interval");
-
-                    b.Property<double>("totalhours")
-                        .HasColumnType("double precision");
-
-                    b.Property<string>("userid")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("userid");
-
-                    b.ToTable("TimeEntries");
                 });
 
             modelBuilder.Entity("TimeTrackingApp.Models.Entities.User", b =>
@@ -420,10 +420,10 @@ namespace TimeTrackingApp.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TimeTrackingApp.Models.Entities.LeaveRequest", b =>
+            modelBuilder.Entity("TimeEntry", b =>
                 {
                     b.HasOne("TimeTrackingApp.Models.Entities.User", "User")
-                        .WithMany("LeaveRequests")
+                        .WithMany("TimeEntries")
                         .HasForeignKey("userid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -431,10 +431,10 @@ namespace TimeTrackingApp.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("TimeTrackingApp.Models.Entities.TimeEntry", b =>
+            modelBuilder.Entity("TimeTrackingApp.Models.Entities.LeaveRequest", b =>
                 {
                     b.HasOne("TimeTrackingApp.Models.Entities.User", "User")
-                        .WithMany("TimeEntries")
+                        .WithMany("LeaveRequests")
                         .HasForeignKey("userid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

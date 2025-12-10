@@ -22,13 +22,11 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Tworzenie ról przy starcie aplikacji
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
 
-    // Seed roles
     string[] roles = { "Admin", "Kierownik", "Pracownik" };
     foreach (var role in roles)
     {
@@ -36,7 +34,6 @@ using (var scope = app.Services.CreateScope())
             await roleManager.CreateAsync(new IdentityRole(role));
     }
 
-    // Seed admin user
     string adminEmail = "admin@admin.com";
     string adminPassword = "Admin123!";
 

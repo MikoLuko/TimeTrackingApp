@@ -1,0 +1,33 @@
+﻿@model TimeTrackingApp.Models.ViewModels.HistoryViewModel
+
+<h2>Historia pracy</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Start</th>
+            <th>Koniec</th>
+            <th>Godziny</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model.Entries)
+        {
+            <tr>
+                <td>@e.entrydate.ToString("dd-MM-yyyy")</td>
+
+                <td>@e.starttime.ToString(@"hh\:mm")</td>
+
+                <td>
+                    @(e.endtime.HasValue
+                                    ? e.endtime.Value.ToString(@"hh\:mm")
+                                    : "W trakcie")
+                </td>
+
+                <td>@e.totalhours.ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

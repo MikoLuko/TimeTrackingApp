@@ -608,9 +608,6 @@
         }
       },
       "Microsoft.AspNetCore.Identity.UI/10.0.1": {
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "10.0.1"
-        },
         "runtime": {
           "lib/net10.0/Microsoft.AspNetCore.Identity.UI.dll": {
             "assemblyVersion": "10.0.1.0",
@@ -1376,14 +1373,6 @@
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "10.0.0.1",
-            "fileVersion": "10.0.125.57005"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Embedded/10.0.1": {
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
-            "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.125.57005"
           }
         }
@@ -2600,13 +2589,6 @@
       "sha512": "sha512-IiWPd4j8JLNjSkyXl5hvJwX2ZENDVQVPDHYgZmYdw8+YkY2xp9iQt0vjdnAQZLpo/ipeW1xgOqfSBEnivKWPYQ==",
       "path": "microsoft.extensions.dependencymodel/10.0.1",
       "hashPath": "microsoft.extensions.dependencymodel.10.0.1.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Embedded/10.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-PkrDqw6uwm4Y7IucI3PjqwhCeCoHno3hzOeEt0hUrFI+ccYBC0X3NfQbhkFG46TgclnCyUDStmgJzpie9T9ZlQ==",
-      "path": "microsoft.extensions.fileproviders.embedded/10.0.1",
-      "hashPath": "microsoft.extensions.fileproviders.embedded.10.0.1.nupkg.sha512"
     },
     "Microsoft.Identity.Client/4.73.1": {
       "type": "package",

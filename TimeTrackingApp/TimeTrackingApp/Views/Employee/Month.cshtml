@@ -1,0 +1,32 @@
+﻿@model TimeTrackingApp.Models.ViewModels.MonthViewModel
+
+<h2>Przepracowane godziny</h2>
+
+<p>
+    Miesiąc: <strong>@Model.Month</strong> / <strong>@Model.Year</strong>
+    <br />
+    Łącznie godzin: <strong>@Model.TotalHours</strong>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Start</th>
+            <th>Koniec</th>
+            <th>Godziny</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model.Entries)
+        {
+            <tr>
+                <td>@m.entrydate.ToShortDateString()</td>
+                <td>@m.starttime</td>
+                <td>@(m.endtime?.ToString() ?? "W trakcie")</td>
+                <td>@m.totalhours.ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
