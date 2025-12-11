@@ -1,0 +1,33 @@
+﻿@model List<TimeTrackingApp.Models.ViewModel.TimeEntryEditViewModel>
+
+<h2>Historia pracy: @Model.FirstOrDefault()?.Name</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Start</th>
+            <th>Koniec</th>
+            <th>Godziny</th>
+            <th>Notatka</th>
+            <th>Akcja</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.EntryDate.ToString("dd-MM-yyyy")</td>
+                <td>@e.StartTime</td>
+                <td>@(e.EndTime?.ToString() ?? "W trakcie")</td>
+                <td>@e.TotalHours.ToString("F2")</td>
+                <td>@e.Note</td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-action="EditEntries" asp-route-id="@e.Id">Edytuj</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-secondary" asp-action="ManagerPanel">Powrót do panelu</a>

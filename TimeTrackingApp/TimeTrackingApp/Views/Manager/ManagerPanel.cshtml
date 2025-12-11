@@ -1,0 +1,34 @@
+﻿@model List<TimeTrackingApp.Models.ViewModel.ManagerViewModel>
+
+<h2>Pracownicy działu</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Imię i nazwisko</th>
+            <th>Stanowisko</th>
+            <th>Godziny w miesiącu</th>
+            <th>Liczba wpisów</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.FullName</td>
+                <td>@e.Position</td>
+                <td>@e.TotalHoursThisMonth.ToString("0.00")</td>
+                <td>@e.EntriesCount</td>
+                <td>
+                    <a class="btn btn-info"
+                       asp-action="History"
+                       asp-route-id="@e.UserId">
+                        Historia
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

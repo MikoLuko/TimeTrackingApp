@@ -1,0 +1,38 @@
+﻿@model TimeTrackingApp.Models.ViewModel.EditTimeEntriesViewModel
+
+@{
+    ViewData["Title"] = "Edycja wpisu pracy";
+}
+
+<h2>Edycja wpisu pracy</h2>
+
+<div>
+    <p><strong>Pracownik:</strong> @Model.Name</p>
+    <p><strong>Data wpisu:</strong> @Model.EntryDate.ToString("dd-MM-yyyy")</p>
+</div>
+
+<form asp-action="EditEntries" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-2">
+        <label asp-for="StartTime" class="form-label">Godzina rozpoczęcia</label>
+        <input asp-for="StartTime" type="time" class="form-control" />
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="EndTime" class="form-label">Godzina zakończenia</label>
+        <input asp-for="EndTime" type="time" class="form-control" />
+    </div>
+
+    <div class="form-group mb-2">
+        <label asp-for="Note" class="form-label">Uzasadnienie korekty</label>
+        <textarea asp-for="Note" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary">Zapisz zmiany</button>
+        <a asp-action="History" asp-route-id="@Model.UserId" class="btn btn-secondary ms-2">Anuluj</a>
+
+    </div>
+</form>
+

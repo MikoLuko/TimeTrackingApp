@@ -69,11 +69,11 @@ else
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // je¿eli korzystasz z plików statycznych
+app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication(); // konieczne dla Identity
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
