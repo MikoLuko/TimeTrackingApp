@@ -1,4 +1,26 @@
 ﻿@model TimeTrackingApp.Models.ViewModels.EmpPanelViewModel
+<script>
+    let Time = 0;
+    const Limit = 2000 * 60;
+
+    function resetTime() {
+        Time = 0;
+    }
+
+    window.onload = resetTime;
+    document.onmousemove = resetTime;
+    document.onkeypress = resetTime;
+    document.onscroll = resetTime;
+    document.onclick = resetTime;
+
+    setInterval(() => {
+        Time += 1000;
+
+        if (Time >= Limit) {
+            window.location.href = "/Identity/Account/Logout";
+        }
+    }, 1000);
+</script>
 
 <h2>Panel pracownika</h2>
 
