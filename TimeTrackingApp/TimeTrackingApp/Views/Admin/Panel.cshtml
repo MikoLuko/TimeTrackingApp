@@ -6,9 +6,9 @@
 
 <script>
     var szer = window.matchMedia("(max-width: 520px)");
-    window.onload = function() {
+    document.addEventListener("DOMContentLoaded", function () {
         renderTable();
-    };
+    });
     szer.addEventListener('change', (x) => {
         renderTable();
     });

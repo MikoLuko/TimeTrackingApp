@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="~/TimeTrackingApp.styles.css" asp-append-version="true" />
 </head>
 <body>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.AntiForgeryToken()
+    }
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -66,3 +71,39 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+<script>
+    let Time = 0;
+    const Limit = 60 * 15;
+
+    function reset() {
+        Time = 0;
+    }
+
+    window.onload = reset;
+    document.onmousemove = reset;
+    document.onkeypress = reset;
+    document.onscroll = reset;
+    document.onclick = reset;
+
+    setInterval(() => {
+        Time++;
+        if (Time >= Limit) {
+            fetch('/Identity/Account/Logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                }
+            }).then(() => {
+                window.location.href = '/Identity/Account/Login';
+            });
+        }
+    }, 1000);
+</script>
+
+
+
+
+
+
+

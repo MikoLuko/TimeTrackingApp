@@ -1,0 +1,36 @@
+﻿@model List<TimeTrackingApp.Models.ViewModel.LeaveRequestViewModel>
+
+<h2>Moje wnioski urlopowe</h2>
+
+<a class="btn btn-success mb-3" asp-controller="LeaveRequest" asp-action="Create">
+    Złóż nowy wniosek
+</a>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Typ urlopu</th>
+            <th>Start</th>
+            <th>Koniec</th>
+            <th>Liczba dni</th>
+            <th>Powód</th>
+            <th>Status</th>
+            <th>Komentarz kierownika</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.LeaveType</td>
+                <td>@r.StartDate.ToString("yyyy-MM-dd")</td>
+                <td>@r.EndDate.ToString("yyyy-MM-dd")</td>
+                <td>@r.DaysCount</td>
+                <td>@r.Reason</td>
+                <td>@r.Status</td>
+                <td>@r.ManagerComment</td>
+                <td>@r.RequestDate</td>
+            </tr>
+        }
+    </tbody>
+</table>

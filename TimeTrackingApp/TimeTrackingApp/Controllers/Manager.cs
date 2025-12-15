@@ -123,11 +123,61 @@ namespace TimeTrackingApp.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("History", new { id = entry.userid });
         }
+        public async Task<IActionResult> LeaveRequestsToApprove()
+        {
+            var manager = await _userManager.GetUserAsync(User);
+            if (manager == null)
+                return Unauthorized();
 
+            var employees = await _userManager.Users
+                .Where(u => u.Department == manager.Department && u.IsActive)
+                .ToListAsync();
 
+            var employeeIds = employees.Select(e => e.Id).ToList();
 
+            var requests = await _context.LeaveRequests
+                .Where(r => employeeIds.Contains(r.userid))
+                .OrderByDescending(r => r.requestdate)
+                .ToListAsync();
 
+            var model = requests.Select(r =>
+            {
+                var emp = employees.First(e => e.Id == r.userid);
+                return new LeaveRequestApprovalViewModel
+                {
+                    Id = r.id,
+                    EmployeeName = $"{emp.FirstName} {emp.LastName}",
+                    LeaveType = r.leavetype,
+                    StartDate = r.startdate,
+                    EndDate = r.enddate,
+                    DaysCount = r.dayscount,
+                    Reason = r.reason,
+                    Status = r.status,
+                    ManagerComment = r.managercomment,
+                    RequestDate = r.requestdate
+                };
+            }).ToList();
 
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ApproveLeaveRequest(LeaveRequestDecisionViewModel model)
+        {
+            var request = await _context.LeaveRequests.FindAsync(model.Id);
+            if (request == null)
+                return NotFound();
+
+            request.status = model.Decision;
+            request.managercomment = model.Comment;
+            request.decisiondate = DateTime.UtcNow;
+            request.reviewedby = User.Identity.Name;
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("LeaveRequestsToApprove");
+        }
 
     }
 }
