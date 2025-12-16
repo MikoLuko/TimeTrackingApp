@@ -5,17 +5,20 @@ using Microsoft.EntityFrameworkCore;
 using TimeTrackingApp.Data;
 using TimeTrackingApp.Models.Entities;
 using TimeTrackingApp.Models.ViewModels;
+using TimeTrackingApp.Services;
 
 [Authorize(Roles = "Pracownik,Admin,Kierownik")]
 public class Employee : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly UserManager<User> _userManager;
+    private readonly IEmailService _emailService;
 
-    public Employee(ApplicationDbContext context, UserManager<User> userManager)
+    public Employee(ApplicationDbContext context, UserManager<User> userManager, IEmailService emailService)
     {
         _context = context;
         _userManager = userManager;
+        _emailService = emailService;
     }
 
     [HttpPost]
@@ -75,6 +78,24 @@ public class Employee : Controller
     public async Task<IActionResult> Panel()
     {
         var user = await _userManager.GetUserAsync(User);
+        var yesterday = DateTime.UtcNow.AddDays(-1).Date;
+
+        if (yesterday.DayOfWeek != DayOfWeek.Saturday && yesterday.DayOfWeek != DayOfWeek.Sunday)
+        {
+            bool hasEntry = await _context.TimeEntries
+                .AnyAsync(t => t.userid == user.Id && t.entrydate.Date == yesterday);
+
+            if (!hasEntry)
+            {
+                await _emailService.SendEmailAsync(
+                    user.Email,
+                    "Brak wpisów czasu pracy wczoraj",
+                    $@"
+                <h3>Witaj {user.FirstName}!</h3>
+                <p>Nie odnotowaliśmy wczoraj żadnych wpisów czasu pracy. Prosimy o uzupełnienie danych w systemie.</p>"
+                );
+            }
+        }
 
         var openEntry = await _context.TimeEntries
             .Where(x => x.userid == user.Id && x.endtime == null)

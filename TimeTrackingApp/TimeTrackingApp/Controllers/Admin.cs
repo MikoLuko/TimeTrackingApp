@@ -5,6 +5,7 @@ namespace TimeTrackingApp.Controllers
     using global::TimeTrackingApp.Data;
     using global::TimeTrackingApp.Models.Entities;
     using global::TimeTrackingApp.Models.ViewModel;
+    using global::TimeTrackingApp.Services;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
@@ -16,12 +17,14 @@ namespace TimeTrackingApp.Controllers
             private readonly ApplicationDbContext _context;
             private readonly UserManager<User> _userManager;
             private readonly RoleManager<IdentityRole> _roleManager;
+            private readonly IEmailService _emailService;
 
-            public AdminController(ApplicationDbContext context, UserManager<User> userManager,RoleManager<IdentityRole> roleManager)
+            public AdminController(ApplicationDbContext context, UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
             {
                 _context = context;
                 _userManager = userManager;
                 _roleManager = roleManager;
+                _emailService = emailService;
             }
 
             public async Task<IActionResult> Panel()
@@ -148,8 +151,8 @@ namespace TimeTrackingApp.Controllers
 
                 return RedirectToAction(nameof(Panel));
             }
-        
-        [HttpPost]
+
+            [HttpPost]
             public async Task<IActionResult> Deactivate(string id)
             {
                 if (id == null) return NotFound();
@@ -181,7 +184,44 @@ namespace TimeTrackingApp.Controllers
                 return RedirectToAction(nameof(Panel));
             }
 
-        }
+        [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> ResetUserPassword(string userId)
+            {
+                if (string.IsNullOrEmpty(userId))
+                    return BadRequest();
 
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user == null)
+                    return NotFound();
+                var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var newPassword = "NoweHaslo123!";
+
+                var result = await _userManager.ResetPasswordAsync(user, token, newPassword);
+
+                if (result.Succeeded)
+                {
+                    await _emailService.SendEmailAsync(
+                        user.Email,
+                        "Reset hasła w TimeTrackingApp",
+                        $@"
+            <h3>Witaj {user.FirstName}!</h3>
+            <p>Twoje hasło zostało zresetowane przez administratora.</p>
+            <p>Nowe hasło: <b>{newPassword}</b></p>
+            <p>Po zalogowaniu prosimy o zmianę hasła na własne.</p>"
+                    );
+
+                    TempData["Success"] = "Hasło zostało zresetowane i wysłane e-mailem do użytkownika.";
+                }
+                else
+                {
+                    TempData["Error"] = "Nie udało się zresetować hasła.";
+                }
+
+                return RedirectToAction("Panel");
+            }
+
+
+        }
     }
 }

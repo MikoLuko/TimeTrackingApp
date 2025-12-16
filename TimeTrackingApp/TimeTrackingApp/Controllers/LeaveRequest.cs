@@ -5,6 +5,7 @@ using TimeTrackingApp.Data;
 using TimeTrackingApp.Models.Entities;
 using TimeTrackingApp.Models.ViewModel;
 using TimeTrackingApp.Models.ViewModels;
+using TimeTrackingApp.Services;
 
 namespace TimeTrackingApp.Controllers
 {
@@ -12,11 +13,13 @@ namespace TimeTrackingApp.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<User> _userManager;
+        private readonly IEmailService _emailService;
 
-        public LeaveRequestController(ApplicationDbContext context, UserManager<User> userManager)
+        public LeaveRequestController(ApplicationDbContext context, UserManager<User> userManager, IEmailService emailService)
         {
             _context = context;
             _userManager = userManager;
+            _emailService = emailService;
         }
 
         public async Task<IActionResult> MyRequests()
@@ -73,7 +76,21 @@ namespace TimeTrackingApp.Controllers
 
             _context.LeaveRequests.Add(leaveRequest);
             await _context.SaveChangesAsync();
-
+            await _emailService.SendEmailAsync(
+               user.Email,
+               "Potwierdzenie złożenia wniosku urlopowego",
+               $@"
+                <h3>Witaj {user.FirstName}!</h3>
+                <p>Twój wniosek urlopowy został złożony pomyślnie.</p>
+                <ul>
+                    <li>Typ urlopu: <b>{leaveRequest.leavetype}</b></li>
+                    <li>Od: <b>{leaveRequest.startdate:dd.MM.yyyy}</b></li>
+                    <li>Do: <b>{leaveRequest.enddate:dd.MM.yyyy}</b></li>
+                    <li>Liczba dni: <b>{leaveRequest.dayscount}</b></li>
+                    <li>Powód: {leaveRequest.reason}</li>
+                </ul>
+                <p>Status wniosku: <b>{leaveRequest.status}</b></p>"
+           );
 
             TempData["Success"] = "Wniosek został utworzony.";
             return RedirectToAction("MyRequests");

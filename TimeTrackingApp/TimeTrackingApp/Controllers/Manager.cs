@@ -4,21 +4,24 @@ using Microsoft.EntityFrameworkCore;
 using TimeTrackingApp.Data;
 using TimeTrackingApp.Models.Entities;
 using TimeTrackingApp.Models.ViewModel;
+using TimeTrackingApp.Services;
 
 namespace TimeTrackingApp.Controllers
 {
     public class Manager : Controller
     {
-            private readonly ApplicationDbContext _context;
-            private readonly UserManager<User> _userManager;
-            private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IEmailService _emailService;
 
-            public Manager(ApplicationDbContext context, UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
-            {
-                _context = context;
-                _userManager = userManager;
-                _roleManager = roleManager;
-            }
+        public Manager(ApplicationDbContext context, UserManager<User> userManager, RoleManager<IdentityRole> roleManager, IEmailService emailService)
+        {
+            _context = context;
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _emailService = emailService;
+        }
 
         public async Task<IActionResult> ManagerPanel()
         {
@@ -165,16 +168,49 @@ namespace TimeTrackingApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ApproveLeaveRequest(LeaveRequestDecisionViewModel model)
         {
-            var request = await _context.LeaveRequests.FindAsync(model.Id);
+            var request = await _context.LeaveRequests
+                .Include(l => l.User)
+                .FirstOrDefaultAsync(l => l.id == model.Id);
+
             if (request == null)
                 return NotFound();
 
             request.status = model.Decision;
             request.managercomment = model.Comment;
             request.decisiondate = DateTime.UtcNow;
-            request.reviewedby = User.Identity.Name;
+            request.reviewedby = User.Identity!.Name;
 
             await _context.SaveChangesAsync();
+
+            string subject;
+            string body;
+
+            if (model.Decision == "Zaakceptowano")
+            {
+                subject = "Wniosek urlopowy – zatwierdzony";
+                body = $@"
+            <p>Twój wniosek urlopowy od 
+            <b>{request.startdate:dd.MM.yyyy}</b> 
+            do <b>{request.enddate:dd.MM.yyyy}</b> 
+            został <b>ZATWIERDZONY</b>.</p>
+            <p><b>Powód:</b> {model.Comment}</p>";
+            }
+            else
+            {
+                subject = "Wniosek urlopowy – odrzucony";
+                body = $@"
+            <p>Twój wniosek urlopowy od 
+            <b>{request.startdate:dd.MM.yyyy}</b> 
+            do <b>{request.enddate:dd.MM.yyyy}</b> 
+            został <b>ODRZUCONY</b>.</p>
+            <p><b>Powód:</b> {model.Comment}</p>";
+            }
+
+            await _emailService.SendEmailAsync(
+                request.User.Email,
+                subject,
+                body
+            );
 
             return RedirectToAction("LeaveRequestsToApprove");
         }
