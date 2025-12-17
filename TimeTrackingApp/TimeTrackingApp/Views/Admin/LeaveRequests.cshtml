@@ -1,0 +1,36 @@
+﻿@model List<TimeTrackingApp.Models.Entities.LeaveRequest>
+
+<h2>Wnioski urlopowe</h2>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Pracownik</th>
+            <th>Typ</th>
+            <th>Od</th>
+            <th>Do</th>
+
+            <th>Dni</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+                <td>@r.User.FirstName @r.User.LastName</td>
+                <td>@r.leavetype</td>
+                <td>@r.startdate.ToString("yyyy-MM-dd")</td>
+                <td>@r.enddate.ToString("yyyy-MM-dd")</td>
+                <td>@r.dayscount</td>
+                <td>@r.status</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<h2>Wnioski urlopowe</h2>
+
+<a class="btn btn-success mb-3"
+   asp-action="ExportLeaveRequestsCsv">
+    Eksport do CSV
+</a>

@@ -104,9 +104,14 @@
     }
 </script>
 
+
 <form asp-action="Create" method="get" class="input-group" style="justify-content:center; margin-bottom:10px;">
     <button class="btn btn-success" style="width:60%;font-size:130%; border-radius:5px; font-weight:bold;">DODAJ</button>
 </form>
 
 <table class="table table-hover table-striped table-bordered text-center" style="vertical-align:middle;" id="table">
 </table>
+<div class="mb-4 d-flex gap-2 justify-content-center">
+    <a class="btn btn-outline-primary" asp-action="WorkReport">Raport czasu pracy</a>
+    <a class="btn btn-outline-secondary" asp-action="LeaveRequests">Wnioski urlopowe</a>
+</div>

@@ -9,6 +9,7 @@ namespace TimeTrackingApp.Controllers
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
+    using System.Text;
 
     namespace TimeTrackingApp.Controllers
     {
@@ -220,6 +221,96 @@ namespace TimeTrackingApp.Controllers
 
                 return RedirectToAction("Panel");
             }
+            public async Task<IActionResult> WorkReport(int? year, int? month)
+            {
+                year ??= DateTime.UtcNow.Year;
+                month ??= DateTime.UtcNow.Month;
+
+                var entries = await _context.TimeEntries
+                    .Include(t => t.User)
+                    .Where(t => t.entrydate.Year == year && t.entrydate.Month == month)
+                    .OrderBy(t => t.User.LastName)
+                    .ThenBy(t => t.entrydate)
+                    .ToListAsync();
+
+                ViewBag.Year = year;
+                ViewBag.Month = month;
+
+                return View(entries);
+            }
+            public async Task<IActionResult> LeaveRequests()
+            {
+                var requests = await _context.LeaveRequests
+                    .Include(l => l.User)
+                    .OrderByDescending(l => l.requestdate)
+                    .ToListAsync();
+
+                return View(requests);
+            }
+            public async Task<IActionResult> ExportWorkReportCsv(int year, int month)
+            {
+                var entries = await _context.TimeEntries
+                    .Include(t => t.User)
+                    .Where(t => t.entrydate.Year == year && t.entrydate.Month == month)
+                    .ToListAsync();
+
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine("Imię,Nazwisko,Email,Data,Start,Koniec,Godziny");
+
+                foreach (var e in entries)
+                {
+                    sb.AppendLine(
+                        $"{e.User.FirstName}," +
+                        $"{e.User.LastName}," +
+                        $"{e.User.Email}," +
+                        $"{e.entrydate:yyyy-MM-dd}," +
+                        $"{e.starttime}," +
+                        $"{e.endtime}," +
+                        $"{e.totalhours:F2}"
+                    );
+                }
+
+                return File(
+                    System.Text.Encoding.UTF8.GetBytes(sb.ToString()),
+                    "text/csv",
+                    $"raport_czasu_{year}_{month}.csv"
+                );
+            }
+            public async Task<IActionResult> ExportLeaveRequestsCsv()
+            {
+                var requests = await _context.LeaveRequests
+                    .Include(l => l.User)
+                    .OrderByDescending(l => l.requestdate)
+                    .ToListAsync();
+
+                var sb = new StringBuilder();
+                sb.AppendLine("Imię,Nazwisko,Email,Typ urlopu,Od,Do,Liczba dni,Status,Złożono,Komentarz kierownika");
+
+                foreach (var r in requests)
+                {
+                    sb.AppendLine(
+                        $"{r.User?.FirstName}," +
+                        $"{r.User?.LastName}," +
+                        $"{r.User?.Email}," +
+                        $"{r.leavetype}," +
+                        $"{r.startdate:yyyy-MM-dd}," +
+                        $"{r.enddate:yyyy-MM-dd}," +
+                        $"{r.dayscount}," +
+                        $"{r.status}," +
+                        $"{r.requestdate:yyyy-MM-dd}," +
+                        $"{r.managercomment}"
+                    );
+                }
+
+                return File(
+                    Encoding.UTF8.GetBytes(sb.ToString()),
+                    "text/csv",
+                    $"wnioski_urlopowe_{DateTime.UtcNow:yyyy_MM_dd}.csv"
+                );
+            }
+
+
+
 
 
         }

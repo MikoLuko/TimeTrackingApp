@@ -1,0 +1,40 @@
+﻿@model List<TimeTrackingApp.Models.Entities.TimeEntry>
+
+<h2>Raport czasu pracy – @ViewBag.Month/@ViewBag.Year</h2>
+
+<form method="get" class="mb-3">
+    <input type="number" name="year" value="@ViewBag.Year" class="form-control d-inline w-25" />
+    <input type="number" name="month" value="@ViewBag.Month" class="form-control d-inline w-25" />
+    <button class="btn btn-primary">Filtruj</button>
+</form>
+
+<a class="btn btn-success mb-3"
+   asp-action="ExportWorkReportCsv"
+   asp-route-year="@ViewBag.Year"
+   asp-route-month="@ViewBag.Month">
+    Eksport CSV
+</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Pracownik</th>
+            <th>Data</th>
+            <th>Start</th>
+            <th>Koniec</th>
+            <th>Godziny</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.User.FirstName @e.User.LastName</td>
+                <td>@e.entrydate.ToString("yyyy-MM-dd")</td>
+                <td>@e.starttime</td>
+                <td>@e.endtime</td>
+                <td>@e.totalhours.ToString("0.00")</td>
+            </tr>
+        }
+    </tbody>
+</table>
