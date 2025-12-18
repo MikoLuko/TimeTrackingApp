@@ -1,40 +1,105 @@
 ﻿@model List<TimeTrackingApp.Models.Entities.TimeEntry>
 
-<h2>Raport czasu pracy – @ViewBag.Month/@ViewBag.Year</h2>
+<h2 class="text-center">Raport czasu pracy – @ViewBag.Month/@ViewBag.Year</h2>
 
 <form method="get" class="mb-3">
-    <input type="number" name="year" value="@ViewBag.Year" class="form-control d-inline w-25" />
-    <input type="number" name="month" value="@ViewBag.Month" class="form-control d-inline w-25" />
-    <button class="btn btn-primary">Filtruj</button>
+    <div class="row g-2 align-items-end text-center text-md-start">
+
+        <div class="col-6 col-md-3">
+            <label class="form-label">Rok</label>
+            <input type="number"
+                   name="year"
+                   value="@ViewBag.Year"
+                   class="form-control" />
+        </div>
+
+        <div class="col-6 col-md-3">
+            <label class="form-label">Miesiąc</label>
+            <input type="number"
+                   name="month"
+                   min="1"
+                   max="12"
+                   value="@ViewBag.Month"
+                   class="form-control" />
+        </div>
+
+        <div class="col-12 col-md-3 d-grid">
+            <button class="btn btn-primary">
+                Filtruj
+            </button>
+        </div>
+
+        <div class="col-12 col-md-3 d-grid">
+            <a class="btn btn-success"
+               asp-action="ExportWorkReportCsv"
+               asp-route-year="@ViewBag.Year"
+               asp-route-month="@ViewBag.Month">
+                Eksport CSV
+            </a>
+        </div>
+
+    </div>
 </form>
 
-<a class="btn btn-success mb-3"
-   asp-action="ExportWorkReportCsv"
-   asp-route-year="@ViewBag.Year"
-   asp-route-month="@ViewBag.Month">
-    Eksport CSV
-</a>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Pracownik</th>
-            <th>Data</th>
-            <th>Start</th>
-            <th>Koniec</th>
-            <th>Godziny</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var e in Model)
-        {
-            <tr>
-                <td>@e.User.FirstName @e.User.LastName</td>
-                <td>@e.entrydate.ToString("yyyy-MM-dd")</td>
-                <td>@e.starttime</td>
-                <td>@e.endtime</td>
-                <td>@e.totalhours.ToString("0.00")</td>
-            </tr>
+
+
+<script>
+    var szer = window.matchMedia("(max-width: 775px)");
+
+    document.addEventListener("DOMContentLoaded", function () {
+        renderTable();
+    });
+
+    szer.addEventListener('change', () => {
+        renderTable();
+    });
+
+    function renderTable() {
+        if (szer.matches) {
+            document.getElementById('table').innerHTML = `
+                @foreach (var e in Model)
+                {
+                        <tr><th>Pracownik</th><td>@e.User.FirstName @e.User.LastName</td></tr>
+                        <tr><th>Data</th><td>@e.entrydate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr>
+                            <th>Start</th>
+                            <td>@e.starttime.ToString(@"hh\:mm")</td>
+                        </tr>
+                        <tr>
+                            <th>Koniec</th>
+                            <td>@(e.endtime.HasValue? e.endtime.Value.ToString(@"hh\:mm") : "-")</td>
+                        </tr>
+                        <tr><th>Godziny</th><td>@e.totalhours.ToString("0.00")</td></tr>
+                        <tr><td colspan="2"><hr /></td></tr>
+                }
+            `;
+        } else {
+            document.getElementById('table').innerHTML = `
+                <tr>
+                    <th>Pracownik</th>
+                    <th>Data</th>
+                    <th>Start</th>
+                    <th>Koniec</th>
+                    <th>Godziny</th>
+                </tr>
+                @foreach (var e in Model)
+                {
+                        <tr>
+                            <td>@e.User.FirstName @e.User.LastName</td>
+                            <td>@e.entrydate.ToString("yyyy-MM-dd")</td>
+                            <td>@e.starttime.ToString(@"hh\:mm")</td>
+                            <td>@(e.endtime.HasValue? e.endtime.Value.ToString(@"hh\:mm") : "-")</td>
+                            <td>@e.totalhours.ToString("0.00")</td>
+                        </tr>
+                }
+            `;
         }
+    }
+</script>
+<table class="table table-striped">
+    <tbody id="table">
+        
     </tbody>
 </table>
+

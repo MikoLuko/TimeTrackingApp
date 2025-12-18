@@ -1,33 +1,76 @@
 ﻿@model List<TimeTrackingApp.Models.ViewModel.TimeEntryEditViewModel>
 
+@{
+    ViewData["Title"] = "Historia pracy";
+}
+
+<script>
+    var szer = window.matchMedia("(max-width: 768px)");
+    document.addEventListener("DOMContentLoaded", function () {
+        renderTable();
+    });
+    szer.addEventListener('change', (x) => {
+        renderTable();
+    });
+
+    function renderTable() {
+        if(szer.matches){
+            document.getElementById('table').innerHTML = `
+                @foreach (var e in Model)
+                {
+                        <tr><th>Data</th><td>@e.EntryDate.ToString("dd-MM-yyyy")</td></tr>
+                        <tr>
+                            <th>Start</th>
+                            <td>@e.StartTime.ToString(@"hh\:mm")</td>
+                        </tr>
+                        <tr>
+                            <th>Koniec</th>
+                            <td>@(e.EndTime.HasValue? e.EndTime.Value.ToString(@"hh\:mm") : "-")</td>
+                        </tr>
+                        <tr><th>Godziny</th><td>@e.TotalHours.ToString("F2")</td></tr>
+                        <tr><th>Notatka</th><td>@e.Note</td></tr>
+                        <tr>
+                            <th>Akcja</th>
+                            <td>
+                                <a class="btn btn-primary w-100" asp-action="EditEntries" asp-route-id="@e.Id">Edytuj</a>
+                            </td>
+                        </tr>
+                        <tr><td colspan="2"><hr /></td></tr>
+                }
+            `;
+        } else {
+            document.getElementById('table').innerHTML = `
+                <tr>
+                    <th>Data</th>
+                    <th>Start</th>
+                    <th>Koniec</th>
+                    <th>Godziny</th>
+                    <th>Notatka</th>
+                    <th>Akcja</th>
+                </tr>
+                @foreach (var e in Model)
+                {
+                        <tr>
+                            <td>@e.EntryDate.ToString("dd-MM-yyyy")</td>
+                            <td>@e.StartTime.ToString(@"hh\:mm")</td>
+                            <td>@(e.EndTime.HasValue? e.EndTime.Value.ToString(@"hh\:mm") : "-")</td>
+                            <td>@e.TotalHours.ToString("F2")</td>
+                            <td>@e.Note</td>
+                            <td>
+                                <a class="btn btn-sm btn-primary" asp-action="EditEntries" asp-route-id="@e.Id">Edytuj</a>
+                            </td>
+                        </tr>
+                }
+            `;
+        }
+    }
+</script>
+
 <h2>Historia pracy: @Model.FirstOrDefault()?.Name</h2>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Data</th>
-            <th>Start</th>
-            <th>Koniec</th>
-            <th>Godziny</th>
-            <th>Notatka</th>
-            <th>Akcja</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var e in Model)
-        {
-            <tr>
-                <td>@e.EntryDate.ToString("dd-MM-yyyy")</td>
-                <td>@e.StartTime</td>
-                <td>@(e.EndTime?.ToString() ?? "W trakcie")</td>
-                <td>@e.TotalHours.ToString("F2")</td>
-                <td>@e.Note</td>
-                <td>
-                    <a class="btn btn-sm btn-primary" asp-action="EditEntries" asp-route-id="@e.Id">Edytuj</a>
-                </td>
-            </tr>
-        }
-    </tbody>
+<table class="table table-bordered table-striped text-center align-middle" id="table">
 </table>
 
-<a class="btn btn-secondary" asp-action="ManagerPanel">Powrót do panelu</a>
+<div class="mt-4 d-flex justify-content-center">
+    <a class="btn btn-secondary w-75 w-md-auto px-5 py-2" asp-action="ManagerPanel">Powrót do panelu</a>
+</div>

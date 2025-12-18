@@ -2,30 +2,66 @@
 
 <h2>Przepracowane godziny</h2>
 
-<p>
+<p class="fs-4">
     Miesiąc: <strong>@Model.Month</strong> / <strong>@Model.Year</strong>
     <br />
-    Łącznie godzin: <strong>@Model.TotalHours</strong>
+    Łącznie godzin: <strong>@Model.TotalHours.ToString("F2")</strong>
 </p>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Data</th>
-            <th>Start</th>
-            <th>Koniec</th>
-            <th>Godziny</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var m in Model.Entries)
-        {
-            <tr>
-                <td>@m.entrydate.ToShortDateString()</td>
-                <td>@m.starttime</td>
-                <td>@(m.endtime?.ToString() ?? "W trakcie")</td>
-                <td>@m.totalhours.ToString("F2")</td>
-            </tr>
-        }
-    </tbody>
+<table class="table table-bordered text-center" id="table">
 </table>
+
+<script>
+    var szer = window.matchMedia("(max-width: 1135px)");
+
+    document.addEventListener("DOMContentLoaded", function () {
+        renderTable();
+    });
+
+    szer.addEventListener('change', (x) => {
+        renderTable();
+    });
+
+    function renderTable() {
+        if(szer.matches){
+            document.getElementById('table').innerHTML = `
+                @foreach (var m in Model.Entries)
+                {
+                        <tr><th>Data</th><td>@m.entrydate.ToShortDateString()</td></tr>
+                            <tr>
+                                <th>Start</th>
+                                <td>@m.starttime.ToString(@"hh\:mm")</td>
+                            </tr>
+                            <tr>
+                                <th>Koniec</th>
+                                <td>@(m.endtime.HasValue? m.endtime.Value.ToString(@"hh\:mm") : "-")</td>
+                            </tr>
+                        <tr><th>Godziny</th><td>@m.totalhours.ToString("F2")</td></tr>
+                        <tr><td colspan="2"><hr></td></tr>
+                }
+            `;
+        } else {
+            document.getElementById('table').innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Start</th>
+                        <th>Koniec</th>
+                        <th>Godziny</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var m in Model.Entries)
+                    {
+                            <tr>
+                                <td>@m.entrydate.ToShortDateString()</td>
+                                <td>@m.starttime.ToString(@"hh\:mm")</td>
+                                <td>@(m.endtime.HasValue? m.endtime.Value.ToString(@"hh\:mm") : "-")</td>
+                                <td>@m.totalhours.ToString("F2")</td>
+                            </tr>
+                    }
+                </tbody>
+            `;
+        }
+    }
+</script>

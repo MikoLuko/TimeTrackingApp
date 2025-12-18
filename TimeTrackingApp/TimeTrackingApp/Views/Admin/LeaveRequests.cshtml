@@ -1,36 +1,73 @@
 ﻿@model List<TimeTrackingApp.Models.Entities.LeaveRequest>
 
-<h2>Wnioski urlopowe</h2>
+<h2 class="text-center">Wnioski urlopowe</h2>
+<div class="container mb-3">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+            <a asp-action="ExportLeaveRequestsCsv"
+               class="btn btn-success w-100  fs-6 fw-bold">
+                Eksport do CSV
+            </a>
+        </div>
+    </div>
+</div>
 
-<table class="table table-bordered">
-    <thead class="table-dark">
-        <tr>
-            <th>Pracownik</th>
-            <th>Typ</th>
-            <th>Od</th>
-            <th>Do</th>
 
-            <th>Dni</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var r in Model)
-        {
-            <tr>
-                <td>@r.User.FirstName @r.User.LastName</td>
-                <td>@r.leavetype</td>
-                <td>@r.startdate.ToString("yyyy-MM-dd")</td>
-                <td>@r.enddate.ToString("yyyy-MM-dd")</td>
-                <td>@r.dayscount</td>
-                <td>@r.status</td>
-            </tr>
+
+<script>
+    var szer = window.matchMedia("(max-width: 900px)");
+
+    document.addEventListener("DOMContentLoaded", function () {
+        renderTable();
+    });
+
+    szer.addEventListener('change', () => {
+        renderTable();
+    });
+
+    function renderTable() {
+        const table = document.getElementById('table');
+
+        if (szer.matches) {
+            table.innerHTML = `
+                @foreach (var r in Model)
+                {
+                        <tr><th>Pracownik</th><td>@r.User.FirstName @r.User.LastName</td></tr>
+                        <tr><th>Typ urlopu</th><td>@r.leavetype</td></tr>
+                        <tr><th>Od</th><td>@r.startdate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><th>Do</th><td>@r.enddate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><th>Dni</th><td>@r.dayscount</td></tr>
+                        <tr><th>Status</th><td>@r.status</td></tr>
+                        <tr><td colspan="2"><hr /></td></tr>
+                }
+            `;
+        } else {
+            table.innerHTML = `
+                <tr>
+                    <th>Pracownik</th>
+                    <th>Typ</th>
+                    <th>Od</th>
+                    <th>Do</th>
+                    <th>Dni</th>
+                    <th>Status</th>
+                </tr>
+                @foreach (var r in Model)
+                {
+                        <tr>
+                            <td>@r.User.FirstName @r.User.LastName</td>
+                            <td>@r.leavetype</td>
+                            <td>@r.startdate.ToString("yyyy-MM-dd")</td>
+                            <td>@r.enddate.ToString("yyyy-MM-dd")</td>
+                            <td>@r.dayscount</td>
+                            <td>@r.status</td>
+                        </tr>
+                }
+            `;
         }
-    </tbody>
-</table>
-<h2>Wnioski urlopowe</h2>
+    }
+</script>
 
-<a class="btn btn-success mb-3"
-   asp-action="ExportLeaveRequestsCsv">
-    Eksport do CSV
-</a>
+<table id="table"
+       class="table table-bordered table-striped text-center"
+       style="vertical-align:middle;">
+</table>

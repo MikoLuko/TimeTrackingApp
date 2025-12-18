@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TimeTrackingApp.Data;
@@ -8,6 +9,7 @@ using TimeTrackingApp.Services;
 
 namespace TimeTrackingApp.Controllers
 {
+    [Authorize(Roles = "Kierownik")]
     public class Manager : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -61,9 +63,17 @@ namespace TimeTrackingApp.Controllers
         }
         public async Task<IActionResult> History(string id)
         {
+            var manager = await _userManager.GetUserAsync(User);
+            if (manager == null)
+                return Unauthorized();
+
             var employee = await _userManager.FindByIdAsync(id);
             if (employee == null)
                 return NotFound();
+
+            // DODAJ TO - sprawdź czy pracownik jest z tego samego działu
+            if (employee.Department != manager.Department)
+                return Forbid();
 
             var entries = await _context.TimeEntries
                 .Where(t => t.userid == id)
@@ -82,20 +92,29 @@ namespace TimeTrackingApp.Controllers
             }).ToList();
 
             ViewData["EmployeeId"] = id;
-
             return View(model);
         }
+
         public async Task<IActionResult> EditEntries(int id)
         {
+            var manager = await _userManager.GetUserAsync(User);
+            if (manager == null)
+                return Unauthorized();
+
             var entry = await _context.TimeEntries.FindAsync(id);
             if (entry == null)
                 return NotFound();
 
             var employee = await _userManager.FindByIdAsync(entry.userid);
 
+            // DODAJ TO - sprawdź uprawnienia
+            if (employee.Department != manager.Department)
+                return Forbid();
+
             var model = new EditTimeEntriesViewModel
             {
                 Id = entry.id,
+                UserId = entry.userid,
                 Name = $"{employee.FirstName} {employee.LastName}",
                 EntryDate = entry.entrydate,
                 StartTime = entry.starttime,
@@ -103,7 +122,6 @@ namespace TimeTrackingApp.Controllers
                 TotalHours = entry.totalhours,
                 Note = entry.note
             };
-
             return View(model);
         }
 
@@ -111,9 +129,18 @@ namespace TimeTrackingApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditEntries(EditTimeEntriesViewModel model)
         {
+            var manager = await _userManager.GetUserAsync(User);
+            if (manager == null)
+                return Unauthorized();
+
             var entry = await _context.TimeEntries.FindAsync(model.Id);
             if (entry == null)
                 return NotFound();
+
+            var employee = await _userManager.FindByIdAsync(entry.userid);
+
+            if (employee.Department != manager.Department)
+                return Forbid();
 
             entry.starttime = model.StartTime;
             entry.endtime = model.EndTime;

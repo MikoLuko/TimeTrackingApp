@@ -5,6 +5,7 @@ namespace TimeTrackingApp.Models.ViewModels
     {
         public bool IsWorking { get; set; }
         public TimeEntry? CurrentEntry { get; set; }
+        public List<TimeEntry> Entries { get; set; }
     }
 }
 

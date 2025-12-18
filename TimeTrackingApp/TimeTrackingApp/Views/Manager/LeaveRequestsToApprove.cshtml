@@ -1,47 +1,94 @@
 ﻿@model List<TimeTrackingApp.Models.ViewModel.LeaveRequestApprovalViewModel>
 
-<h2>Wnioski do zatwierdzenia</h2>
+@{
+    ViewData["Title"] = "Wnioski do zatwierdzenia";
+}
+@Html.AntiForgeryToken()
+<script>
+    var szer = window.matchMedia("(max-width: 1400px)");
+    document.addEventListener("DOMContentLoaded", function () {
+        renderTable();
+    });
+    szer.addEventListener('change', (x) => {
+        renderTable();
+    });
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Pracownik</th>
-            <th>Typ urlopu</th>
-            <th>Start</th>
-            <th>Koniec</th>
-            <th>Dni</th>
-            <th>Powód</th>
-            <th>Status</th>
-            <th>Komentarz kierownika</th>
-            <th>Data złożenia</th>
-            <th>Akcja</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var r in Model)
-        {
-            <tr>
-                <td>@r.EmployeeName</td>
-                <td>@r.LeaveType</td>
-                <td>@r.StartDate.ToString("yyyy-MM-dd")</td>
-                <td>@r.EndDate.ToString("yyyy-MM-dd")</td>
-                <td>@r.DaysCount</td>
-                <td>@r.Reason</td>
-                <td>@r.Status</td>
-                <td>@r.ManagerComment</td>
-                <td>@r.RequestDate.ToString("yyyy-MM-dd")</td>
-                <td>
-                    <form asp-action="ApproveLeaveRequest" method="post">
-                        <input type="hidden" name="Id" value="@r.Id" />
-                        <select name="Decision" class="form-select mb-1">
-                            <option value="Zaakceptowano">Zaakceptowano</option>
-                            <option value="Odrzucono">Odrzucono</option>
-                        </select>
-                        <textarea name="Comment" class="form-control mb-1" placeholder="Komentarz (przy odrzuceniu)"></textarea>
-                        <button type="submit" class="btn btn-primary btn-sm">Zatwierdź</button>
-                    </form>
-                </td>
-            </tr>
+    function renderTable() {
+        if(szer.matches){
+            document.getElementById('table').innerHTML = `
+                @foreach (var r in Model)
+                {
+                        <tr><th>Pracownik</th><td>@r.EmployeeName</td></tr>
+                        <tr><th>Typ urlopu</th><td>@r.LeaveType</td></tr>
+                        <tr><th>Start</th><td>@r.StartDate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><th>Koniec</th><td>@r.EndDate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><th>Dni</th><td>@r.DaysCount</td></tr>
+                        <tr><th>Powód</th><td>@r.Reason</td></tr>
+                        <tr><th>Status</th><td>@r.Status</td></tr>
+                        <tr><th>Komentarz kierownika</th><td>@r.ManagerComment</td></tr>
+                        <tr><th>Data złożenia</th><td>@r.RequestDate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr>
+                            <th>Akcja</th>
+                            <td>
+                                <form asp-action="ApproveLeaveRequest" method="post">
+                                    <input type="hidden" name="Id" value="@r.Id" />
+                                    <select name="Decision" class="form-select mb-2">
+                                        <option value="Zaakceptowano">Zaakceptowano</option>
+                                        <option value="Odrzucono">Odrzucono</option>
+                                    </select>
+                                    <textarea name="Comment" class="form-control mb-2" placeholder="Komentarz (przy odrzuceniu)" rows="3"></textarea>
+                                    <button type="submit" class="btn btn-primary w-100">Zatwierdź</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr><td colspan="2"><hr /></td></tr>
+                }
+            `;
+        } else {
+            document.getElementById('table').innerHTML = `
+                <tr>
+                    <th>Pracownik</th>
+                    <th>Typ urlopu</th>
+                    <th>Start</th>
+                    <th>Koniec</th>
+                    <th>Dni</th>
+                    <th>Powód</th>
+                    <th>Status</th>
+                    <th>Komentarz kierownika</th>
+                    <th>Data złożenia</th>
+                    <th>Akcja</th>
+                </tr>
+                @foreach (var r in Model)
+                {
+                        <tr>
+                            <td>@r.EmployeeName</td>
+                            <td>@r.LeaveType</td>
+                            <td>@r.StartDate.ToString("yyyy-MM-dd")</td>
+                            <td>@r.EndDate.ToString("yyyy-MM-dd")</td>
+                            <td>@r.DaysCount</td>
+                            <td>@r.Reason</td>
+                            <td>@r.Status</td>
+                            <td>@r.ManagerComment</td>
+                            <td>@r.RequestDate.ToString("yyyy-MM-dd")</td>
+                            <td>
+                                <form asp-action="ApproveLeaveRequest" method="post">
+                                    <input type="hidden" name="Id" value="@r.Id" />
+                                    <select name="Decision" class="form-select mb-1">
+                                        <option value="Zaakceptowano">Zaakceptowano</option>
+                                        <option value="Odrzucono">Odrzucono</option>
+                                    </select>
+                                    <textarea name="Comment" class="form-control mb-1" placeholder="Komentarz (przy odrzuceniu)"></textarea>
+                                    <button type="submit" class="btn btn-primary btn-sm">Zatwierdź</button>
+                                </form>
+                            </td>
+                        </tr>
+                }
+            `;
         }
-    </tbody>
+    }
+</script>
+
+<h2 class="text-center">Wnioski do zatwierdzenia</h2>
+
+<table class="table table-striped table-bordered text-center align-middle" id="table">
 </table>

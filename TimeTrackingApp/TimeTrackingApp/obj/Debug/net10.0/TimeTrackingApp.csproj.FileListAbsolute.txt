@@ -779,7 +779,6 @@ C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingAp
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\k4gcx18wr4-{0}-j5mq2jizvt-j5mq2jizvt.gz
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\z3afvaliyz-{0}-06098lyss8-06098lyss8.gz
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\pjgvlqcxjg-{0}-nvvlpmu67g-nvvlpmu67g.gz
-C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\dh3unn2iwu-{0}-s35ty4nyc5-s35ty4nyc5.gz
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\k0xdmo7bxy-{0}-pj5nd1wqec-pj5nd1wqec.gz
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\zqdv0tw8qe-{0}-46ein0sx1k-46ein0sx1k.gz
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\ziekm1bg4l-{0}-v0zj4ognzu-v0zj4ognzu.gz
@@ -828,3 +827,4 @@ C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingAp
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\TimeTrackingApp.pdb
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\TimeTrackingApp.genruntimeconfig.cache
 C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\ref\TimeTrackingApp.dll
+C:\Users\Mluko\OneDrive\Desktop\TrackingSystemApp\TimeTrackingApp\TimeTrackingApp\TimeTrackingApp\obj\Debug\net10.0\compressed\dh3unn2iwu-{0}-fe9nw3r6py-fe9nw3r6py.gz

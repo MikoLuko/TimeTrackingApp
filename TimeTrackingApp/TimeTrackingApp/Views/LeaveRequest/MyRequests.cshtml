@@ -1,36 +1,75 @@
 ﻿@model List<TimeTrackingApp.Models.ViewModel.LeaveRequestViewModel>
 
-<h2>Moje wnioski urlopowe</h2>
+<h2 class="text-center">Moje wnioski urlopowe</h2>
 
-<a class="btn btn-success mb-3" asp-controller="LeaveRequest" asp-action="Create">
-    Złóż nowy wniosek
-</a>
+<form asp-controller="LeaveRequest" asp-action="Create" method="get" class="d-flex justify-content-center mb-3">
+    <button type="submit" class="btn btn-success w-50" style="font-size: 1.2rem; font-weight: bold;">
+        Złóż nowy wniosek
+    </button>
+</form>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Typ urlopu</th>
-            <th>Start</th>
-            <th>Koniec</th>
-            <th>Liczba dni</th>
-            <th>Powód</th>
-            <th>Status</th>
-            <th>Komentarz kierownika</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var r in Model)
-        {
-            <tr>
-                <td>@r.LeaveType</td>
-                <td>@r.StartDate.ToString("yyyy-MM-dd")</td>
-                <td>@r.EndDate.ToString("yyyy-MM-dd")</td>
-                <td>@r.DaysCount</td>
-                <td>@r.Reason</td>
-                <td>@r.Status</td>
-                <td>@r.ManagerComment</td>
-                <td>@r.RequestDate</td>
-            </tr>
+
+<table class="table table-bordered table-striped text-center" id="leaveTable"></table>
+
+<script>
+    var smallScreen = window.matchMedia("(max-width: 1003px)");
+
+    document.addEventListener("DOMContentLoaded", function () {
+        renderLeaveTable();
+    });
+
+    smallScreen.addEventListener("change", () => {
+        renderLeaveTable();
+    });
+
+    function renderLeaveTable() {
+        var table = document.getElementById("leaveTable");
+        if (smallScreen.matches) {
+            table.innerHTML = `
+                @foreach (var r in Model)
+                {
+                        <tr><th>Typ urlopu</th><td>@r.LeaveType</td></tr>
+                        <tr><th>Start</th><td>@r.StartDate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><th>Koniec</th><td>@r.EndDate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><th>Liczba dni</th><td>@r.DaysCount</td></tr>
+                        <tr><th>Powód</th><td>@r.Reason</td></tr>
+                        <tr><th>Status</th><td>@r.Status</td></tr>
+                        <tr><th>Komentarz kierownika</th><td>@r.ManagerComment</td></tr>
+                        <tr><th>Data złożenia</th><td>@r.RequestDate.ToString("yyyy-MM-dd")</td></tr>
+                        <tr><td colspan="2"><hr /></td></tr>
+                }
+            `;
+        } else {
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Typ urlopu</th>
+                        <th>Start</th>
+                        <th>Koniec</th>
+                        <th>Liczba dni</th>
+                        <th>Powód</th>
+                        <th>Status</th>
+                        <th>Komentarz kierownika</th>
+                        <th>Data złożenia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var r in Model)
+                    {
+                            <tr>
+                                <td>@r.LeaveType</td>
+                                <td>@r.StartDate.ToString("yyyy-MM-dd")</td>
+                                <td>@r.EndDate.ToString("yyyy-MM-dd")</td>
+                                <td>@r.DaysCount</td>
+                                <td>@r.Reason</td>
+                                <td>@r.Status</td>
+                                <td>@r.ManagerComment</td>
+                                <td>@r.RequestDate.ToString("yyyy-MM-dd")</td>
+                            </tr>
+                    }
+                </tbody>
+            `;
         }
-    </tbody>
-</table>
+    }
+</script>
+

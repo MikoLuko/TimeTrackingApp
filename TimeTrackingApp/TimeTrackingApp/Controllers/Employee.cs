@@ -78,8 +78,10 @@ public class Employee : Controller
     public async Task<IActionResult> Panel()
     {
         var user = await _userManager.GetUserAsync(User);
-        var yesterday = DateTime.UtcNow.AddDays(-1).Date;
+        if (user == null)
+            return Unauthorized();
 
+        var yesterday = DateTime.UtcNow.AddDays(-1).Date;
         if (yesterday.DayOfWeek != DayOfWeek.Saturday && yesterday.DayOfWeek != DayOfWeek.Sunday)
         {
             bool hasEntry = await _context.TimeEntries
@@ -96,36 +98,26 @@ public class Employee : Controller
                 );
             }
         }
-
         var openEntry = await _context.TimeEntries
             .Where(x => x.userid == user.Id && x.endtime == null)
             .FirstOrDefaultAsync();
 
-        var vm = new EmpPanelViewModel
-        {
-            IsWorking = openEntry != null,
-            CurrentEntry = openEntry
-        };
-
-        return View(vm);
-    }
-
-    public async Task<IActionResult> History()
-    {
-        var user = await _userManager.GetUserAsync(User);
-
         var entries = await _context.TimeEntries
             .Where(x => x.userid == user.Id)
             .OrderByDescending(x => x.entrydate)
+            .Take(30)
             .ToListAsync();
 
-        var vm = new HistoryViewModel
+        var vm = new EmpPanelViewModel
         {
+            IsWorking = openEntry != null,
+            CurrentEntry = openEntry,
             Entries = entries
         };
 
         return View(vm);
     }
+
     public async Task<IActionResult> Month(int month = 0, int year = 0)
     {
         var user = await _userManager.GetUserAsync(User);
@@ -149,5 +141,34 @@ public class Employee : Controller
 
         return View(vm);
     }
+    [HttpGet]
+    public async Task<IActionResult> GetLeavesForCalendar()
+    {
+        var leaves = await _context.LeaveRequests
+            .Include(l => l.User)
+            .Where(l => l.status == "Zaakceptowano")
+            .Select(l => new
+            {
+                title = $"{l.User.FirstName} {l.User.LastName} ({l.leavetype})",
+                start = l.startdate.ToString("yyyy-MM-dd"),
+                end = l.enddate.AddDays(1).ToString("yyyy-MM-dd"),
+
+                backgroundColor =
+                    l.leavetype == "Wypoczynkowy" ? "#10274e" :
+                    l.leavetype == "Bezpłatny" ? "#3d5eae" :
+                    l.leavetype == "Na żądanie" ? "#7c98fb" :
+                    "#0d6efd",
+
+                borderColor =
+                    l.leavetype == "Wypoczynkowy" ? "#10274e" :
+                    l.leavetype == "Bezpłatny" ? "#3d5eae" :
+                    l.leavetype == "Na żądanie" ? "#7c98fb" :
+                    "#0d6efd"
+            })
+            .ToListAsync();
+
+        return Json(leaves);
+    }
+
 }
 
