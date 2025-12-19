@@ -1,7 +1,7 @@
 ﻿@model List<TimeTrackingApp.Models.Entities.TimeEntry>
 
 <h2 class="text-center">Raport czasu pracy – @ViewBag.Month/@ViewBag.Year</h2>
-
+@Html.AntiForgeryToken()
 <form method="get" class="mb-3">
     <div class="row g-2 align-items-end text-center text-md-start">
 

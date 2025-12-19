@@ -1,9 +1,6 @@
 ﻿@model List<TimeTrackingApp.Models.ViewModel.PanelViewModel>
 
-@{
-    ViewData["Title"] = "Użytkownicy";
-}
-
+@Html.AntiForgeryToken()
 <script>
     var szer = window.matchMedia("(max-width: 1135px)");
     document.addEventListener("DOMContentLoaded", function () {

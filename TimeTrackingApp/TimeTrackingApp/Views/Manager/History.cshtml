@@ -1,8 +1,5 @@
 ﻿@model List<TimeTrackingApp.Models.ViewModel.TimeEntryEditViewModel>
-
-@{
-    ViewData["Title"] = "Historia pracy";
-}
+@Html.AntiForgeryToken()
 
 <script>
     var szer = window.matchMedia("(max-width: 768px)");

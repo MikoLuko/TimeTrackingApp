@@ -71,7 +71,6 @@ namespace TimeTrackingApp.Controllers
             if (employee == null)
                 return NotFound();
 
-            // DODAJ TO - sprawdź czy pracownik jest z tego samego działu
             if (employee.Department != manager.Department)
                 return Forbid();
 
@@ -107,7 +106,6 @@ namespace TimeTrackingApp.Controllers
 
             var employee = await _userManager.FindByIdAsync(entry.userid);
 
-            // DODAJ TO - sprawdź uprawnienia
             if (employee.Department != manager.Department)
                 return Forbid();
 

@@ -1,5 +1,5 @@
 ﻿@model TimeTrackingApp.Models.ViewModel.EditViewModel
-
+@Html.AntiForgeryToken()
 <form asp-action="Edit" method="post">
     <input type="hidden" asp-for="Id" />
 

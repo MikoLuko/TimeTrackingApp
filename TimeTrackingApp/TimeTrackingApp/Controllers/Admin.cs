@@ -6,6 +6,7 @@ namespace TimeTrackingApp.Controllers
     using global::TimeTrackingApp.Models.Entities;
     using global::TimeTrackingApp.Models.ViewModel;
     using global::TimeTrackingApp.Services;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ namespace TimeTrackingApp.Controllers
 
     namespace TimeTrackingApp.Controllers
     {
+        [Authorize(Roles ="Admin")]
         public class AdminController : Controller
         {
             private readonly ApplicationDbContext _context;

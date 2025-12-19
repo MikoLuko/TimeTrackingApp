@@ -1,7 +1,7 @@
 ﻿@model TimeTrackingApp.Models.ViewModels.EmpPanelViewModel
 
 <h2 class="text-center">Panel Pracownika</h2>
-
+@Html.AntiForgeryToken()
 @if (Model.IsWorking)
 {
     <form method="post" asp-action="EndWork" class="text-center">

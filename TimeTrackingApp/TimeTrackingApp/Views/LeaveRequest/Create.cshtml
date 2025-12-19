@@ -1,7 +1,7 @@
 ﻿@model TimeTrackingApp.Models.ViewModel.LeaveRequestViewModel
 
 <h2 class="text-center">Nowy wniosek urlopowy</h2>
-
+@Html.AntiForgeryToken()
 <form asp-action="Create" method="post">
     <div class="mb-3">
         <label asp-for="LeaveType" class="form-label">Typ Urlopu</label>

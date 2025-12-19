@@ -1,7 +1,7 @@
 ﻿@model TimeTrackingApp.Models.ViewModels.MonthViewModel
 
 <h2>Przepracowane godziny</h2>
-
+@Html.AntiForgeryToken()
 <p class="fs-4">
     Miesiąc: <strong>@Model.Month</strong> / <strong>@Model.Year</strong>
     <br />

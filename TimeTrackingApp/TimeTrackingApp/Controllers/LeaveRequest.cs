@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TimeTrackingApp.Data;
@@ -9,6 +10,7 @@ using TimeTrackingApp.Services;
 
 namespace TimeTrackingApp.Controllers
 {
+    [Authorize]
     public class LeaveRequestController : Controller
     {
         private readonly ApplicationDbContext _context;
