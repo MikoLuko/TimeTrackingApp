@@ -12,3 +12,7 @@ INSERT INTO "AspNetUsers" (
 ('b78c4a2c-9b5c-4104-a672-d8d6d0bb6d53', 'White', 'Walter', 'Programista', 'Masterdev', TRUE, '2025-12-10 13:10:16.863222+00', 'whiteplwalter@gmail.com', 'WHITEPLWALTER@GMAIL.COM', 'whiteplwalter@gmail.com', 'WHITEPLWALTER@GMAIL.COM', TRUE, 'AQAAAAIAAYagAAAAEMlspaQNg6GXHlfWQdqQxg8fDrYRJr6Gz7Miaqa0GIvszj8J1hZ5zh/dEGb6/zSuEg==', FALSE, FALSE, FALSE, 0);
 
 
+
+:)
+
+
